@@ -33,3 +33,10 @@ elif len(name)>50:
     print("name must be a maximum of 50 characters")
 else:
     print("name looks good")
+weight = print("weight: ")
+print("(L)bs or (k)g: ")
+
+if weight > 120:
+    print(weight*0.6)
+else:
+    print(weight*0.45)
