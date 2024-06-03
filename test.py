@@ -33,10 +33,16 @@ elif len(name)>50:
     print("name must be a maximum of 50 characters")
 else:
     print("name looks good")
-weight = print("weight: ")
-print("(L)bs or (k)g: ")
 
-if weight > 120:
-    print(weight*0.6)
+    #exercise 2#
+weight = int(input("weight: "))
+print(weight)
+unit = (input("(L)bs or (k)g: "))
+
+if unit.upper=="l":
+  converted = weight*0.45
+  print(f"you are {converted} kg")
+
 else:
-    print(weight*0.45)
+    converted = weight/0.45
+    print(f"ypu are {converted} pounds")
