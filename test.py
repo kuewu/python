@@ -46,3 +46,23 @@ if unit.upper=="l":
 else:
     converted = weight/0.45
     print(f"ypu are {converted} pounds")
+
+#using the while loop#
+Guess_count = 1
+while Guess_count<= 5:
+    print( '*' * Guess_count)
+    Guess_count = Guess_count + 1
+print("Done")
+
+# lets create a quess game#
+secret_number = 9
+Guess_count = 0
+Guess_limit = 3
+while Guess_count< Guess_limit:
+  Guess = int (input("Guess: "))
+  Guess_count +=1
+  if Guess == secret_number:
+      print("you won !!!!! HURRAYYYY")
+      break
+else:
+    print("you failed")
